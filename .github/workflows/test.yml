@@ -9,8 +9,6 @@ on:
 jobs:
   test-win:
     runs-on: windows-latest
-    strategy:
-      fail-fast: false
     steps:
       - name: Set up Go 1.x.y
         uses: actions/setup-go@v2
