@@ -25,4 +25,4 @@ jobs:
           go mod verify
           go mod download
           go test -v -race ./...
-          cd cli && go build cli.go
+          cd cli && go build -v cli.go
