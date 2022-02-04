@@ -24,4 +24,5 @@ jobs:
         run: |
           go mod verify
           go mod download
-          go test -race ./...
+          go test -v -race ./...
+          go build cli/cli.go
